@@ -1,0 +1,430 @@
+*, html {
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+  color: rgb(25, 25, 25);
+}
+
+/**************FOR WHOLE WEB**************/
+h1, h2, h3, h4 {
+  color: rgb(74, 74, 74);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+span {
+  color: rgb(74, 74, 74);
+  font-size: 1rem;
+}
+
+footer, .video, .news {
+  background-color: rgb(245, 245, 245);
+}
+
+.video-right-1st, .banner, .news-right-3rd {
+  background-color: rgb(216, 216, 216);
+}
+
+.video-col-right, .news-right, .news-right-text, .courses,
+.courses-wrap, .video {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+header, footer, .video-col-video video, .video-content-wrap,
+.video, .banner, .news, .courses img, .courses-block h3,
+.courses-block h4 {
+  width: 100%;
+}
+
+/*************************HEADER********************/
+
+header {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  border: none;
+}
+
+.brand, nav {
+  padding: 0.625rem 1.5rem;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.brand {
+  font-weight: 800;
+}
+
+nav span {
+  margin: 0 1rem;
+}
+
+.brand-mobile, .banner-mobile, .mobile-img {
+  display: none;
+}
+
+/*************************BANNER********************/
+
+.banner {
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.banner-left {
+  width: 60%;
+  height: 27rem;
+  display: block;
+  margin: 2rem 2.5rem 2rem 1.5rem;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  flex-shrink: 0;
+}
+
+.banner-right h1 {
+  padding-bottom: 1rem;
+}
+
+.banner-right span {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  font-weight: 500;
+}
+
+.button {
+  width: 20rem;
+  padding: 0.9rem;
+  margin: 2rem 0;
+  text-align: center;
+  background-color: rgb(74, 74, 74);
+  font-size: 1.25rem;
+  display: block;
+}
+
+.button a {
+  color: rgb(245, 245, 245);
+}
+
+
+/*****************************NEWS block ***************************/
+
+.news {
+  display: inline-flex;
+}
+
+.news-left {
+  width: 60%;
+  height: auto;
+  margin: 2rem 1.5rem 2rem 1.5rem;
+  justify-content: center;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.news-left-img {
+  height: 21rem;
+  background-image: url("../images/information-main.jpg");
+  background-size: cover;
+}
+
+.news-left h2 {
+  font-family: 'Roboto', sans-serif;
+  padding: 2rem 0 1.5rem 0;
+}
+
+.news-left span {
+  line-height: 1.35;
+}
+
+#author {
+  font-size: 0.75rem;
+  display: block;
+  margin-top: 1.75rem;
+  color: rgb(74, 74, 74);
+  font-weight: bold;
+}
+
+/**************Right***************/
+.news-right {
+  border-left: 1px solid rgb(216, 216, 216);
+}
+
+.news-right-1st, .news-right-2nd, .news-right-3rd {
+  display: inline-flex;
+  align-items: center;
+}
+
+.news-right-1st img, .news-right-2nd img, .news-right-3rd img {
+  width: 31%;
+  height: 31%;
+  padding: 1rem;
+}
+
+.news-right-1st {
+  margin-top: 1rem;
+  border-bottom: 2px double rgb(216, 216, 216);
+}
+
+/*styles for text*/
+.news-right-text {
+  padding: 0 1rem;
+}
+
+.news-right-text span {
+  margin: 0.6rem 0 1.75rem 0;
+}
+
+.news-right-text a {color: royalblue;}
+
+/******************COURSES *********************/
+
+.courses {
+  background-color: rgb(235, 235, 235);
+  padding: 2rem;
+  align-items: center;
+}
+
+.courses h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.courses-wrap {
+  width: 90%;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.courses img {
+  margin: 0 2rem 1rem 0;
+}
+
+.courses-1st-column, .courses-2nd-column {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.courses-block {
+  width: 35%;
+  background-color: white;
+  margin: 0.5rem 1rem;
+}
+
+.courses-block h3, .courses-block h4 {
+  padding: 0 0.75rem 0.5rem 1rem;
+}
+
+.courses-block span {
+  width: 90%;
+  padding: 0 2rem 1rem 1rem;
+}
+
+/**********************************VIDEO*****************************/
+.video h2 {
+  margin: 2rem auto;
+}
+
+.video h3 {
+  margin: 1.5rem 0 1rem 0;
+}
+
+.video-content-wrap {
+  display: inline-flex;
+}
+
+.video-col-left {
+  width: 60%;
+  height: auto;
+  justify-content: center;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 0 1rem 3rem 1.5rem;
+}
+
+.video-col-video, .video h3, .video h2, .courses-block span {
+  display: block;
+}
+
+/*Right column*/
+.video-right-1st, .video-right-2nd {
+  display: inline-flex;
+  align-items: center;
+}
+
+.video-right-1st img, .video-right-2nd img {
+  width: 38%;
+  height: 38%;
+  padding: 1rem;
+}
+
+/*styles for text*/
+.news-right-text {
+  padding: 0 1rem;
+}
+
+.news-right-text span {
+  margin: 0.6rem 0 1.75rem 0;
+}
+
+
+/*******************************footer****************************************/
+
+footer {
+  height: 5rem;
+  border-top: 1px solid rgb(216, 216, 216);
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+footer span, .footer-right {
+  padding: 1rem 2rem;
+}
+
+/*************************************************
+                  MEDIA QUORY
+*************************************************/
+
+@media only screen and (max-width: 580px) {
+  .brand, header span, nav, .banner-left,
+  .desktop-img, .news-left, .courses-block span,
+  .courses-block h4, .courses img,
+  .video-col-right, .video h3, .video span,
+  .footer-right {
+    display: none;
+  }
+
+  .brand-mobile {
+    width: 100%;
+    height: 4rem;
+    display: inline-flex;
+    justify-content: space-around;
+  }
+
+  .banner-mobile {
+    display: block;
+    width: 100%;
+    height: 180px;
+    background-color: rgb(116, 116, 116);
+  }
+
+  .banner-right {
+    padding: 2rem 1rem;
+  }
+
+  .banner-right h1, .banner-right span {
+    padding-bottom: 2rem;
+    line-height: 1.5;
+  }
+
+  .button {
+    margin: 2rem auto;
+    background-color: rgb(165, 165, 165);
+  }
+
+  .news-right-1st, .news-right-2nd, .news-right-3rd {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mobile-img {
+    display: block;
+    width: 100%;
+
+  }
+
+  .news-right-1st img, .news-right-2nd img, .news-right-3rd img {
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  .news-right-text {
+    width: 80%;
+    padding-left: 2rem;
+  }
+
+  .news-right-text a{
+    padding-bottom: 1rem;
+  }
+
+  .news-right-3rd {
+    background-color: inherit;
+    }
+
+
+/*----COURSES------*/
+.courses {
+  background-color: rgb(245, 245, 245);
+  border-top: 1px solid rgb(175, 175, 175);
+  border-bottom: 1px solid rgb(175, 175, 175);
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.courses-wrap {
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+.courses-1st-column, .courses-2nd-column {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.courses-block {
+  background-color: rgb(215, 215, 215);
+  padding: 2rem;
+  flex-shrink: 0;
+  width: 81%;
+  display: block;
+}
+
+.courses-block h3 {
+  padding: 0;
+  margin: 0;
+}
+
+/*-------------VIDEO--------------------*/
+
+.video-col-left {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0 0 1.5rem;
+}
+
+/*-------------FOOTER-----------------------*/
+
+footer {
+  margin: 0;
+}
+
+footer span {
+  padding: 2rem;
+}
+
+}
